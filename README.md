@@ -13,6 +13,8 @@ Supported functions:
 This code is not in any way associated with or endorsed by Devolo AG. Use at
 your own risk.
 
+Tested with firmware version 7.8.5.62 (2020-10-02).
+
 ## Installation
 
 ````
