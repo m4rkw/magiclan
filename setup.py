@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='magiclan2',
-      version='0.0.1',
+      version='0.0.2',
       description='MagicLan2 API interface',
       author='Mark Wadham',
       author_email='magiclan@rkw.io',

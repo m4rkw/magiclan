@@ -2,6 +2,7 @@ import requests
 import re
 import urllib.parse
 import json
+import hashlib
 
 class MagicLan2:
 
@@ -14,8 +15,12 @@ class MagicLan2:
       if not password:
         raise Exception("Password required for MagicLan2 device '%s'" % (self.ip))
 
+      pw_hash = hashlib.sha256()
+      pw_hash.update(self.data['CSRFTOKEN'].encode())
+      pw_hash.update(hashlib.sha256(password.encode()).digest())
+
       resp = self.post('/', {
-        '.PASSWORD': password
+        '.PASSWD_HASH': pw_hash.hexdigest()
       })
 
       if resp.status_code != 200:
