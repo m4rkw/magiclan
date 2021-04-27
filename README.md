@@ -13,8 +13,10 @@ Supported functions:
 This code is not in any way associated with or endorsed by Devolo AG. Use at
 your own risk.
 
-* Updated work with firmware 7.10.2.77 (2021-04-01).
+## Changelog
 
+- 24/12/2020 - Release 0.0.1: Initial release
+- 26/04/2021 - Release 0.0.2: Updated to work with firmware 7.10.2.77 (2021-04-01).
 
 ## Installation
 
